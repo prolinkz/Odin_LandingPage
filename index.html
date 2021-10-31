@@ -16,7 +16,7 @@
             .hero {
                 background-color: #1F2937;
                 padding-top: 6px;
-                padding-bottom: 3em;
+                padding-bottom: 5em;
                
             }
 
@@ -33,7 +33,7 @@
                 margin-left: 5em;
                 padding: 0px;
             }
-            .nav-item {
+            .nav-list {
                 text-decoration: none;
                 margin-left: 35em;
                 margin-right: 3px;
@@ -92,23 +92,30 @@
 
             .secondary-text {
                 
-                color: #F9FAF8;
+                color: #E5E7EB;
                 margin-left: 120px;
                 padding: 0px;
-                font-size: 16px;
+                font-size: 18px;
                 font-family: Verdana, sans-serif;
                 
             }
 
             .submit {
-                background-color: #357ef3;
+                background-color: #3882F6;
+                color: #ffffff;
                 margin-left: 6em;
-                margin-top: 5px;
+                margin-top: 8px;
                 padding: 3px;
                 font-size: 20px;
                 border-radius: 6px;
-                width: 10ex;
+                width: 9rem;
+                height: 3rem;
                 font-family: Verdana, sans-serif;
+            }
+
+            .submit a :hover {
+                background: var(--main-blue);
+                font-family: Arial, Helvetica, sans-serif;
             }
 
             .image {
@@ -117,7 +124,7 @@
 
             main {
                 background-color: #ffffff;
-                padding-bottom: 5em;
+                padding-bottom: 10em;
                 
             }
 
@@ -126,14 +133,18 @@
                 font-weight: bold;
                 color: #1F2937;
                 text-align: center;
+                
             }
 
             .flex-container {
                 display: flex;
 
-                padding-top: 5em;
-                padding-bottom: 5em;
-                background-color: whitesmoke;
+                
+                padding-bottom: 10em;
+                background-color: #ffffff;
+                padding: 40px;
+                gap: 15px;
+                
             }
 
             /* this selector selects all divs inside of .flex-container */
@@ -141,11 +152,13 @@
             background: rgb(245, 243, 241);
             border: 4px solid rgb(20, 23, 211);
             height: 180px;
-            width: 60px;
+            width: 40px;
             flex: 1 1 auto;
-            gap: 16px;
+            gap: 10px;
             
-            margin: 22px;
+            margin: 30px;
+            padding-left: 5px;
+            padding-right: 5px;
             }
 
             /* 
@@ -153,11 +166,32 @@
             flex-shrink: 1;
             } */
 
+            /* .random-info .one {
+                flex-grow: 2;
+            } */
+
+            .quote {
+                background-color: #E5E7EB;
+                font-size: 36px;
+                color: #1F2937;
+                font-style: italic;
+
+                padding-top: 50px;
+                padding-right: 120px;
+                padding-bottom: 50px;
+                padding-left: 150px;
+                text-align: justify;
+
+            }
+
+  
+
             footer {
                 background-color: #1F2937;
                 text-decoration: none;
                 color: #F9FAF8;
                 text-align: center;
+                padding: 20px;
             }
         </style>
 
@@ -167,20 +201,17 @@
        <Header>
         <div class="hero">
            <a class="logo" href="" rel="Logo" alt="">Landing Page</a>
-           <nav class="nav-item bg-light">
-                   <a class="nav-link" href="#header" Active>Header</a>
-                   <a class="nav-link" href="#info">Info</a>
-                   <a class="nav-link" href="#">Nav three </a>
-                   <a class="nav-link" href="#">Nav four</a>
+           <nav class="nav-list justify-content-end">
+                   <a class="nav-link active" href="#header">Header</a>
+                   <a class="nav-link" href="#info">Random Info</a>
+                   <a class="nav-link" href="#quote">Quote </a>
+                   <a class="nav-link disabled" href="#">Nav four</a>
             </nav>
            
            <table class="table table-striped table-hover" style="border-color:aqua;" id="header">
                <!-- <thead>
                    <tr>
-                       <th><h1 class="main-text"> This Website is Awesome</h1>
-                        <p class="secondary-text">This Website has some text which goes This Website has some text which goes</p>
-                        <button type="submit" class="submit" name="submit">Sign Up</button>
-                    </th>
+                       <th></th>
                    </tr>
                </thead> -->
                <tbody>
@@ -205,12 +236,24 @@
         <div class="info" id="info"><h1> Some Random Information </h1></div>
             <div class="flex-container random-info">
                 
-                <div class="one"></div>
+                <div class="one" style="display:flex;">
+                    <img src="images/jinnah.jpg">
+                    <!-- <p>here geoes some text</p> -->
+                </div>
                 <div class="two"></div>
                 <div class="three"></div>
                 <div class="four"></div>
               </div>
-          </div>
+
+         <div class="quote" id="quote">
+            <h2> Qoute: </h2>
+             <p><strong>“I do not believe in taking the right decision, I take a decision and make it right.”</strong></p> <br />
+                <p>“Think a hundred times before you take a decision, but once that decision is taken, stand by it as one man.”</p>
+                <name class="name"> <cite> Muhammad Ali Jinnah </cite></name>
+
+         </div>      
+
+          
        </main>
 
         <footer>TheOdinPrject @ </footer>
