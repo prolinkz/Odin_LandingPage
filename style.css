@@ -55,7 +55,7 @@ body{
 } 
 
 .table tr{
-    
+    padding-left: 0px;
     /* border-color: antiquewhite; */
     /* border:5px solid rgb(5, 103, 231); */
     
