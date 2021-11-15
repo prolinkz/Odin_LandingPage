@@ -170,8 +170,8 @@
 
             /* this selector selects all divs inside of .flex-container */
             .flex-container div {
-            width: 80px;
-            height: 300px;
+            width: 90px;
+            height: 400px;
             background: rgb(245, 243, 241);
             border: 4px solid rgb(20, 23, 211);
            
@@ -198,6 +198,10 @@
 
             }
 
+            .name {
+                padding-left: 35rem;
+            }
+
 
 
             .cta {
@@ -207,12 +211,13 @@
                 color: ivory;
                 border: 4px solid rgb(5, 103, 231);
                 border-radius: 20px;
-                padding-top: 20px;
-                padding-bottom: 40px;
+                padding-top: 30px;
+                padding-bottom: 30px;
                 margin-top: 80px;
                 margin-right: 0px;
                 margin-bottom: 30px;
-                margin-left: 150px;
+                margin-left: 160px;
+                
                 
             }
 
@@ -229,13 +234,22 @@
                 margin-top: 0px;
                 padding-top: 0px;
                 font-size: 20px;
-                
-                
+               
 
                 
             }
-            
 
+
+            
+            
+            .original-distorted {
+                height: 400px;
+                width: 200px;
+            }
+
+  .card-img-top {
+      width: 100%;
+  }
   
 
             footer {
@@ -257,7 +271,7 @@
                    <a class="nav-link active" href="#header">Header</a>
                    <a class="nav-link" href="#info">Random Info</a>
                    <a class="nav-link" href="#quote">Quote </a>
-                   <a class="nav-link disabled" href="#">Nav four</a>
+                   <a class="nav-link disabled" href="#cta">CTA</a>
             </nav>
            
            <table class="table table-striped">
@@ -291,25 +305,25 @@
             <div class="flex-container random-info">
                 
                 <div class="one" style="display:flex;">
-                    <img src="images/jinnah.jpg">
+                    <img class="card-img-top img-thumbnail original-distorted" src="images/jinnah.jpg">
                     <!-- <p>here geoes some text</p> -->
                 </div>
                 <div class="two">
-                    <img src="images/jinnah531.jpg">
+                    <img class="card-img-top img-thumbnail original-distorted" src="images/jinnah531.jpg">
                 </div>
                 <div class="three">
-                    <img src="images/jinnah2.jpg">
+                    <img class="card-img-top img-thumbnail original-distorted" src="images/jinnah2.jpg">
                 </div>
                 <div class="four">
-                    <img src="images/jinnah8dc.jpg">
+                    <img class="card-img-top img-thumbnail original-distorted" src="images/jinnah8dc.jpg">
                 </div>
             </div>
 
             <div class="quote" id="quote">
                 <h2> Qoute: </h2>
-                <p><strong>“I do not believe in taking the right decision, I take a decision and make it right.”</strong></p> <br />
+                <p><emp>“I do not believe in taking the right decision, I take a decision and make it right.”</emp></p> <br />
                 <p>“Think a hundred times before you take a decision, but once that decision is taken, stand by it as one man.”</p>
-                <name class="name"> <cite> Muhammad Ali Jinnah </cite></name>
+                <name class="name"><strong> <cite> Muhammad Ali Jinnah </cite></strong></name>
 
             </div>
          
