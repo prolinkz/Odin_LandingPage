@@ -8,3 +8,6 @@ For the section you’re working on, begin by getting all the content onto the p
 Many of the elements on this page are very similar to things you saw in our flexbox exercises… feel free to go back to those if you need a refresher.
 Do not worry about making your project look nice on a mobile device. We’ll learn that later.
 When you finish, don’t forget to push it up to GitHub!
+
+Here is the final result https://prolinkz.github.io/Odin_LandingPage/. 
+If you seen and found any error or bug, feel free to share to correct.
